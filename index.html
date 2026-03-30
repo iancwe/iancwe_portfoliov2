@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ian Chong — Project Manager & Technical Leader | Singapore</title>
+  <meta name="description" content="PMP® & CSM® certified Project Manager with 9+ years bridging engineering and business. Based in Singapore. Open to PM, TPM, and Program Manager roles." />
+  <meta name="keywords" content="Ian Chong, Project Manager, Technical Project Manager, PMP, CSM, Singapore, SaaS, Agile, Scrum, Digital Transformation" />
+  <meta name="author" content="Ian Chong" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.iancwe.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ian Chong — Project Manager & Technical Leader" />
+  <meta property="og:description" content="PMP® & CSM® certified. 9+ years bridging engineering and business to ship products at scale. Based in Singapore." />
+  <meta property="og:url" content="https://www.iancwe.com/" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","name":"Ian Chong","jobTitle":"Project Manager","description":"PMP and CSM certified technology leader with 9+ years bridging full-stack development and project management.","url":"https://www.iancwe.com","sameAs":["https://www.linkedin.com/in/ianc0902"],"address":{"@type":"PostalAddress","addressLocality":"Singapore"}}
+  </script>
+  <!-- ═══════════════════════════════════════════════════════
+       GOOGLE ANALYTICS 4
+       HOW TO SET UP:
+       1. Go to https://analytics.google.com
+       2. Create a new GA4 property for iancwe.com
+       3. Under "Data Streams" → "Web" → copy your Measurement ID (looks like G-XXXXXXXXXX)
+       4. Replace REPLACE_WITH_YOUR_GA4_ID below with your actual ID
+       5. Deploy. Analytics will start tracking within 24 hours.
+       ═══════════════════════════════════════════════════════ -->
+  <!-- Replace G-XXXXXXXXXX with your actual GA4 Measurement ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YMGPD8965M"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-YMGPD8965M');
+  </script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet" />
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#ffffff;--bg2:#f8f9fb;--bg3:#eef1f6;
+      --text:#0f172a;--text2:#334155;--muted:#64748b;
+      --border:#e2e8f0;
+      --acc:#2563eb;--acc-l:#eff6ff;--acc-d:#1d4ed8;
+      --tag:#f1f5f9;--tag-t:#475569;
+      --ff:'Raleway',sans-serif;
+    }
+    html{scroll-behavior:smooth}
+    body{background:var(--bg);color:var(--text);font-family:var(--ff);font-size:16px;line-height:1.7;overflow-x:hidden}
+
+    /* NAV */
+    nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 6vw;height:66px;background:rgba(255,255,255,0.94);backdrop-filter:blur(18px);border-bottom:1px solid var(--border);transition:box-shadow .3s}
+    nav.scrolled{box-shadow:0 2px 20px rgba(0,0,0,0.06)}
+    .nav-logo{font-family:var(--ff);font-size:1.2rem;font-weight:800;color:var(--text);text-decoration:none;letter-spacing:-.01em}
+    .nav-logo span{color:var(--acc)}
+    .nav-links{display:flex;gap:2.2rem;list-style:none}
+    .nav-links a{color:var(--muted);text-decoration:none;font-size:.82rem;font-weight:600;letter-spacing:.07em;text-transform:uppercase;transition:color .2s}
+    .nav-links a:hover{color:var(--text)}
+    .nav-cta{background:var(--acc);color:#fff;padding:.5rem 1.3rem;border-radius:6px;font-family:var(--ff);font-size:.8rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;transition:all .2s}
+    .nav-cta:hover{background:var(--acc-d);transform:translateY(-1px)}
+
+    /* HERO */
+    #hero{min-height:100vh;display:flex;align-items:center;padding:7rem 6vw 5rem;position:relative;overflow:hidden;background:var(--bg)}
+    .hero-bg-grid{position:absolute;inset:0;z-index:0;background-image:linear-gradient(var(--border) 1px,transparent 1px),linear-gradient(90deg,var(--border) 1px,transparent 1px);background-size:48px 48px;opacity:.5;pointer-events:none}
+    .hero-blob{position:absolute;top:-20%;right:-5%;width:52vw;height:80vh;background:radial-gradient(ellipse at 60% 40%,#bfdbfe 0%,#dbeafe 30%,#eff6ff 55%,transparent 75%);border-radius:50%;z-index:0;pointer-events:none}
+    .hero-blob2{position:absolute;bottom:-8%;left:30%;width:40vw;height:30vh;background:radial-gradient(ellipse at center,#e0f2fe 0%,transparent 65%);border-radius:50%;z-index:0;pointer-events:none}
+
+    /* Two-column hero split */
+    .hero-split{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;width:100%}
+    .hero-left{}
+    .hero-right{display:flex;flex-direction:column;gap:0}
+
+    .hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:var(--acc-l);color:var(--acc);font-size:.74rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:.42rem 1rem;border-radius:100px;margin-bottom:1.5rem;opacity:0;animation:fadeUp .6s .15s ease forwards}
+    .bdot{width:7px;height:7px;background:var(--acc);border-radius:50%;animation:pulse 2s infinite}
+    @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(1.5)}}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+
+    h1{font-family:var(--ff);font-size:clamp(4rem,8.5vw,8rem);font-weight:800;line-height:.95;letter-spacing:-.04em;color:var(--text);opacity:0;animation:fadeUp .7s .3s ease forwards}
+    h1 .ac{color:var(--acc);display:block}
+    .hero-role{font-size:clamp(.9rem,1.4vw,1.05rem);font-weight:600;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;margin-top:1.5rem;opacity:0;animation:fadeUp .6s .5s ease forwards}
+
+    .hero-right-inner{opacity:0;animation:fadeUp .7s .55s ease forwards}
+    .hero-sub{font-size:clamp(1rem,1.6vw,1.12rem);color:var(--muted);font-weight:400;line-height:1.8;margin-bottom:2rem}
+    .hero-sub strong{color:var(--text2);font-weight:700}
+
+    /* Mini stat pills in hero right */
+    .hero-stats{display:grid;grid-template-columns:1fr 1fr;gap:.75rem;margin-bottom:2.25rem}
+    .hero-stat{background:#fff;border:1px solid var(--border);border-radius:12px;padding:.9rem 1.1rem;transition:border-color .2s}
+    .hero-stat:hover{border-color:var(--acc)}
+    .hs-num{font-family:var(--ff);font-size:1.7rem;font-weight:800;color:var(--acc);line-height:1;letter-spacing:-.02em;display:block}
+    .hs-lbl{font-size:.72rem;font-weight:600;color:var(--muted);letter-spacing:.05em;text-transform:uppercase;margin-top:.2rem;display:block}
+
+    .hero-actions{display:flex;gap:.85rem;flex-wrap:wrap}
+    .btn-p{background:var(--acc);color:#fff;padding:.88rem 2.2rem;border-radius:8px;font-family:var(--ff);font-size:.9rem;font-weight:700;letter-spacing:.04em;text-decoration:none;transition:all .2s;display:inline-block}
+    .btn-p:hover{background:var(--acc-d);transform:translateY(-2px);box-shadow:0 8px 24px rgba(37,99,235,.25)}
+    .btn-g{background:transparent;color:var(--text2);padding:.88rem 2.2rem;border-radius:8px;border:1.5px solid var(--border);font-family:var(--ff);font-size:.9rem;font-weight:600;text-decoration:none;transition:all .2s;display:inline-block}
+    .btn-g:hover{border-color:var(--acc);color:var(--acc)}
+
+    @media(max-width:860px){
+      .hero-split{grid-template-columns:1fr;gap:3rem}
+      h1{font-size:clamp(3.5rem,12vw,6rem)}
+      .hero-stats{grid-template-columns:repeat(4,1fr)}
+    }
+    @media(max-width:560px){
+      .hero-stats{grid-template-columns:1fr 1fr}
+    }
+
+    /* STATS */
+    #stats{background:var(--text);padding:2.75rem 6vw}
+    .stats-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+    .stat-item{text-align:center;padding:1rem;border-right:1px solid rgba(255,255,255,.1)}
+    .stat-item:last-child{border-right:none}
+    .stat-num{font-family:var(--ff);font-size:clamp(2rem,3.8vw,2.9rem);font-weight:800;color:#fff;line-height:1;display:block;letter-spacing:-.02em}
+    .stat-num .suf{color:#60a5fa}
+    .stat-lbl{font-size:.76rem;color:rgba(255,255,255,.45);letter-spacing:.08em;text-transform:uppercase;margin-top:.4rem;display:block}
+
+    /* SECTION BASICS */
+    section{padding:7rem 6vw}
+    .ey{font-size:.72rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--acc);margin-bottom:.85rem}
+    h2{font-family:var(--ff);font-size:clamp(2rem,4.5vw,3.3rem);font-weight:800;line-height:1.1;letter-spacing:-.02em;color:var(--text);margin-bottom:1.2rem}
+    h2 .ac{color:var(--acc)}
+
+    /* ABOUT */
+    #about{background:var(--bg2)}
+    .about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:5rem;align-items:start}
+    .about-text p{color:var(--muted);font-size:1.04rem;line-height:1.85;margin-bottom:1.15rem}
+    .about-text strong{color:var(--text2);font-weight:700}
+    .cert-row{display:flex;gap:.55rem;flex-wrap:wrap;margin-top:2rem}
+    .cert-chip{display:flex;align-items:center;gap:.4rem;background:#fff;border:1.5px solid var(--border);padding:.42rem 1rem;border-radius:100px;font-size:.82rem;font-weight:700;color:var(--text)}
+    .cdot{width:6px;height:6px;background:var(--acc);border-radius:50%}
+
+    /* Skills card */
+    .skills-card{background:#fff;border:1px solid var(--border);border-radius:16px;padding:2rem 2.2rem;box-shadow:0 4px 24px rgba(0,0,0,.05)}
+    .sc-title{font-size:.7rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:1.4rem;padding-bottom:.85rem;border-bottom:1px solid var(--border)}
+    .sg{margin-bottom:1.6rem}
+    .sg:last-child{margin-bottom:0}
+    .sg-lbl{font-size:.76rem;font-weight:700;color:var(--text2);letter-spacing:.06em;text-transform:uppercase;margin-bottom:.65rem}
+    .tags{display:flex;flex-wrap:wrap;gap:.4rem}
+    .tag{background:var(--tag);color:var(--tag-t);padding:.32rem .75rem;border-radius:6px;font-size:.8rem;font-weight:600;border:1px solid transparent;transition:all .15s;cursor:default}
+    .tag:hover{background:var(--acc-l);color:var(--acc)}
+    .tag.hi{background:var(--acc-l);color:var(--acc)}
+
+    /* CASE STUDIES */
+    #work{background:var(--bg)}
+    .work-hdr{display:grid;grid-template-columns:1fr 1.5fr;gap:4rem;align-items:end;margin-bottom:3rem}
+    .work-desc{color:var(--muted);font-size:1rem;line-height:1.82}
+    .cases{display:flex;flex-direction:column;gap:1.25rem}
+    .case-card{background:var(--bg2);border:1px solid var(--border);border-radius:16px;padding:2.5rem;display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:start;transition:all .25s}
+    .case-card:hover{background:#fff;border-color:var(--acc);box-shadow:0 8px 32px rgba(37,99,235,.08);transform:translateY(-2px)}
+    .case-num{font-size:.7rem;font-weight:800;letter-spacing:.15em;color:var(--acc);text-transform:uppercase;margin-bottom:.5rem}
+    .case-title{font-family:var(--ff);font-size:1.3rem;font-weight:800;color:var(--text);margin-bottom:.55rem;line-height:1.3;letter-spacing:-.01em}
+    .case-desc{color:var(--muted);font-size:.95rem;line-height:1.78;margin-bottom:1.2rem}
+    .case-desc strong{color:var(--text2);font-weight:700}
+    .case-tags{display:flex;gap:.4rem;flex-wrap:wrap}
+    .ctag{font-size:.73rem;font-weight:600;padding:.28rem .7rem;background:var(--tag);color:var(--tag-t);border-radius:5px}
+    .metric-box{text-align:right;min-width:115px}
+    .mv{font-family:var(--ff);font-size:2.5rem;font-weight:800;color:var(--acc);line-height:1;display:block;letter-spacing:-.02em}
+    .ml{font-size:.7rem;color:var(--muted);letter-spacing:.07em;text-transform:uppercase;display:block;margin-top:.3rem}
+
+    /* SKILLS FULL */
+    #skills{background:var(--bg2)}
+    .skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:3rem}
+    .skill-block{background:#fff;border:1px solid var(--border);border-radius:16px;padding:1.75rem 2rem}
+    .skill-block h3{font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--text);margin-bottom:1.2rem;padding-bottom:.8rem;border-bottom:2px solid var(--acc-l)}
+
+    /* EXPERIENCE */
+    #experience{background:var(--bg)}
+    .exp-grid{display:grid;grid-template-columns:1fr 2.2fr;gap:5rem;align-items:start}
+    .tl{position:relative}
+    .tl::before{content:'';position:absolute;left:0;top:10px;bottom:10px;width:2px;background:var(--bg3)}
+    .tl-item{position:relative;padding:0 0 3rem 2rem}
+    .tl-item:last-child{padding-bottom:0}
+    .tl-dot{position:absolute;left:-5px;top:6px;width:12px;height:12px;background:var(--acc);border:2px solid #fff;border-radius:50%;box-shadow:0 0 0 3px var(--acc-l)}
+    .tl-date{font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--acc);margin-bottom:.28rem}
+    .tl-role{font-family:var(--ff);font-size:1.2rem;font-weight:800;color:var(--text);margin-bottom:.12rem;letter-spacing:-.01em}
+    .tl-co{font-size:.88rem;color:var(--muted);font-weight:500;margin-bottom:.85rem}
+    .tl-list{list-style:none}
+    .tl-list li{font-size:.94rem;color:var(--muted);line-height:1.7;padding-left:1.2rem;position:relative;margin-bottom:.38rem}
+    .tl-list li::before{content:'→';position:absolute;left:0;color:var(--acc);font-size:.82rem}
+    .tl-list strong{color:var(--text2);font-weight:700}
+
+    /* CONTACT */
+    #contact{background:var(--acc);padding:7rem 6vw;text-align:center}
+    .otw{display:inline-flex;align-items:center;gap:.5rem;background:rgba(255,255,255,.18);color:#fff;padding:.42rem 1.1rem;border-radius:100px;font-size:.76rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:1.75rem}
+    .owdot{width:7px;height:7px;background:#fff;border-radius:50%;animation:pulse 2s infinite}
+    #contact h2{color:#fff;margin-bottom:.9rem}
+    #contact p{color:rgba(255,255,255,.8);font-size:1.04rem;margin-bottom:2.5rem;max-width:460px;margin-left:auto;margin-right:auto}
+    .cbtns{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap}
+    .btn-w{background:#fff;color:var(--acc);padding:.88rem 2.2rem;border-radius:8px;font-family:var(--ff);font-size:.9rem;font-weight:700;text-decoration:none;transition:all .2s}
+    .btn-w:hover{background:#eff6ff;transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.15)}
+    .btn-ow{background:transparent;color:#fff;padding:.88rem 2.2rem;border-radius:8px;border:2px solid rgba(255,255,255,.5);font-family:var(--ff);font-size:.9rem;font-weight:700;text-decoration:none;transition:all .2s}
+    .btn-ow:hover{border-color:#fff;background:rgba(255,255,255,.1)}
+
+    /* FOOTER */
+    footer{background:var(--text);padding:1.75rem 6vw;display:flex;align-items:center;justify-content:space-between}
+    footer p{font-size:.8rem;color:rgba(255,255,255,.38)}
+    .fl{display:flex;gap:1.5rem}
+    .fl a{font-size:.8rem;color:rgba(255,255,255,.38);text-decoration:none;transition:color .2s}
+    .fl a:hover{color:#fff}
+
+    /* REVEAL */
+    .reveal{opacity:0;transform:translateY(26px);transition:opacity .65s ease,transform .65s ease}
+    .reveal.visible{opacity:1;transform:translateY(0)}
+
+    /* RESPONSIVE */
+    @media(max-width:960px){
+      .about-grid,.work-hdr,.exp-grid{grid-template-columns:1fr;gap:2.5rem}
+      .skills-grid{grid-template-columns:1fr 1fr}
+      .stats-grid{grid-template-columns:repeat(2,1fr)}
+      .stat-item:nth-child(2){border-right:none}
+      .case-card{grid-template-columns:1fr}
+      .metric-box{text-align:left}
+    }
+    @media(max-width:640px){
+      .nav-links{display:none}
+      .skills-grid{grid-template-columns:1fr}
+      section{padding:5rem 5vw}
+      .case-card{padding:1.75rem}
+      footer{flex-direction:column;gap:1rem;text-align:center}
+    }
+  </style>
+</head>
+<body>
+
+<nav id="nav">
+  <a class="nav-logo" href="#hero">Ian <span>Chong</span></a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+  </ul>
+  <a class="nav-cta" href="#contact">Open to Work</a>
+</nav>
+
+<section id="hero">
+  <div class="hero-bg-grid"></div>
+  <div class="hero-blob"></div>
+  <div class="hero-blob2"></div>
+
+  <div class="hero-split">
+    <!-- LEFT: Big name -->
+    <div class="hero-left">
+      <div class="hero-badge"><span class="bdot"></span>Open to work · Singapore</div>
+      <h1>Ian<span class="ac">Chong.</span></h1>
+      <p class="hero-role">Project Manager &amp; Technical Leader</p>
+    </div>
+
+    <!-- RIGHT: About + stats + CTAs -->
+    <div class="hero-right">
+      <div class="hero-right-inner">
+        <p class="hero-sub">
+          <strong>PMP® &amp; CSM® certified</strong> project leader with 9+ years
+          bridging engineering teams and business stakeholders —
+          from writing the code to running the project, end-to-end.
+        </p>
+
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="hs-num">9+</span>
+            <span class="hs-lbl">Years experience</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hs-num">42%</span>
+            <span class="hs-lbl">Chargeback reduction</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hs-num">10K+</span>
+            <span class="hs-lbl">Users shipped</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hs-num">3</span>
+            <span class="hs-lbl">Founding team products</span>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <a class="btn-p" href="#work">View my work</a>
+          <a class="btn-g" href="#contact">Let's connect</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats bar removed — numbers now live in hero -->
+
+<section id="about">
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <p class="ey">About me</p>
+      <h2>The PM who can<br><span class="ac">read the code.</span></h2>
+      <p>Most project managers translate between engineering and business. I've <strong>been on both sides of that table</strong> — writing full-stack code across iOS, Android, and web SaaS for 6+ years before stepping fully into project leadership.</p>
+      <p>That means I catch scope risks before the team does, I know when an engineering estimate is optimistic, and I can run a sprint without losing sight of the user.</p>
+      <p>I've led <strong>eKYC platforms, supply chain automation, fraud prevention systems,</strong> and mobile apps — always cross-functional, always end-to-end, always shipping.</p>
+      <div class="cert-row">
+        <span class="cert-chip"><span class="cdot"></span>PMP®</span>
+        <span class="cert-chip"><span class="cdot"></span>CSM®</span>
+        <span class="cert-chip"><span class="cdot"></span>Full-Stack Dev</span>
+        <span class="cert-chip"><span class="cdot"></span>Singapore-based</span>
+      </div>
+    </div>
+
+    <div class="skills-card reveal" style="transition-delay:.2s">
+      <div class="sc-title">Core competencies</div>
+      <div class="sg">
+        <div class="sg-lbl">Project delivery</div>
+        <div class="tags">
+          <span class="tag hi">PMP® Certified</span>
+          <span class="tag hi">CSM® Certified</span>
+          <span class="tag">Agile / Scrum</span>
+          <span class="tag">Kanban</span>
+          <span class="tag">Sprint planning</span>
+          <span class="tag">Roadmapping</span>
+          <span class="tag">OKR / KPI</span>
+        </div>
+      </div>
+      <div class="sg">
+        <div class="sg-lbl">Leadership</div>
+        <div class="tags">
+          <span class="tag">Stakeholder management</span>
+          <span class="tag">Cross-functional teams</span>
+          <span class="tag">Risk management</span>
+          <span class="tag">Vendor management</span>
+          <span class="tag">Change management</span>
+        </div>
+      </div>
+      <div class="sg">
+        <div class="sg-lbl">Technical fluency</div>
+        <div class="tags">
+          <span class="tag">React.js / Node.js</span>
+          <span class="tag">Python</span>
+          <span class="tag">SQL / MongoDB</span>
+          <span class="tag">REST APIs</span>
+          <span class="tag">SaaS architecture</span>
+          <span class="tag">JIRA / Confluence</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="work-hdr reveal">
+    <div>
+      <p class="ey">Selected work</p>
+      <h2>Things I've<br><span class="ac">shipped.</span></h2>
+    </div>
+    <p class="work-desc">Real projects with real impact. Three delivery stories showing how I approach complex problems — from discovery through launch — with measurable outcomes.</p>
+  </div>
+  <div class="cases">
+    <div class="case-card reveal">
+      <div>
+        <div class="case-num">Case study 01</div>
+        <div class="case-title">Chargeback Reduction &amp; Fraud Prevention</div>
+        <p class="case-desc">Led the end-to-end redesign of fraud prevention workflows at Truegenics. Built in-house automation to flag mass-purchase behaviours, restrict resale abuse, and enforce buyer bans — bringing chargeback rates to <strong>0.61% YTD</strong>, below industry threshold.</p>
+        <div class="case-tags">
+          <span class="ctag">Process automation</span><span class="ctag">Risk management</span><span class="ctag">Stakeholder alignment</span><span class="ctag">Truegenics</span>
+        </div>
+      </div>
+      <div class="metric-box"><span class="mv">42%</span><span class="ml">chargeback reduction yr 1</span></div>
+    </div>
+    <div class="case-card reveal" style="transition-delay:.1s">
+      <div>
+        <div class="case-num">Case study 02</div>
+        <div class="case-title">Supply Chain Email Classifier</div>
+        <p class="case-desc">Identified a high-friction ops bottleneck — manual classification of supply chain emails by product, reorder, and billing status. Designed and built an automated classification system, cutting overhead across multiple departments.</p>
+        <div class="case-tags">
+          <span class="ctag">Automation</span><span class="ctag">Ops efficiency</span><span class="ctag">NLP tooling</span><span class="ctag">Truegenics</span>
+        </div>
+      </div>
+      <div class="metric-box"><span class="mv">∞</span><span class="ml">manual hours reclaimed</span></div>
+    </div>
+    <div class="case-card reveal" style="transition-delay:.2s">
+      <div>
+        <div class="case-num">Case study 03</div>
+        <div class="case-title">eKYC Platform — Fintech / Regtech</div>
+        <p class="case-desc">Spearheaded the digital transformation of a legacy KYC process into a full Regtech eKYC system — integrating compliance, identity verification, and document management. Minimised paperwork and errors while dramatically improving onboarding speed.</p>
+        <div class="case-tags">
+          <span class="ctag">Fintech</span><span class="ctag">Regtech</span><span class="ctag">Digital transformation</span><span class="ctag">Trunk Tech</span>
+        </div>
+      </div>
+      <div class="metric-box"><span class="mv">100%</span><span class="ml">paperless onboarding</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="reveal">
+    <p class="ey">Full toolkit</p>
+    <h2>Skills &amp; <span class="ac">expertise.</span></h2>
+  </div>
+  <div class="skills-grid">
+    <div class="skill-block reveal" style="transition-delay:.05s">
+      <h3>PM &amp; Programme</h3>
+      <div class="tags">
+        <span class="tag hi">PMP® Certified</span><span class="tag hi">CSM® Certified</span>
+        <span class="tag">Agile / Scrum</span><span class="tag">Kanban</span>
+        <span class="tag">JIRA</span><span class="tag">Confluence</span>
+        <span class="tag">Risk management</span><span class="tag">Stakeholder management</span>
+        <span class="tag">OKR / KPI</span><span class="tag">Change management</span>
+        <span class="tag">Vendor management</span><span class="tag">Sprint planning</span>
+        <span class="tag">Roadmapping</span>
+      </div>
+    </div>
+    <div class="skill-block reveal" style="transition-delay:.15s">
+      <h3>Technical</h3>
+      <div class="tags">
+        <span class="tag">React.js</span><span class="tag">Node.js</span>
+        <span class="tag">Python</span><span class="tag">JavaScript</span>
+        <span class="tag">REST APIs</span><span class="tag">SQL</span>
+        <span class="tag">MongoDB</span><span class="tag">Firebase</span>
+        <span class="tag">CI/CD</span><span class="tag">SaaS architecture</span>
+        <span class="tag">iOS / Android</span>
+      </div>
+    </div>
+    <div class="skill-block reveal" style="transition-delay:.25s">
+      <h3>Domain</h3>
+      <div class="tags">
+        <span class="tag hi">Fintech / Regtech</span><span class="tag hi">eCommerce</span>
+        <span class="tag">Supply chain</span><span class="tag">Process automation</span>
+        <span class="tag">Fraud prevention</span><span class="tag">Digital transformation</span>
+        <span class="tag">AI tooling</span><span class="tag">Product discovery</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="exp-grid">
+    <div class="reveal">
+      <p class="ey">Experience</p>
+      <h2>Where I've<br><span class="ac">delivered.</span></h2>
+      <p style="color:var(--muted);font-size:1rem;line-height:1.82;margin-top:1rem">9 years across full-stack development, team leadership, and project management — from founding team to cross-functional PM.</p>
+    </div>
+    <div class="tl reveal" style="transition-delay:.15s">
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-date">Jul 2023 – Present · Truegenics Pte. Ltd.</div>
+        <div class="tl-role">Project Manager</div>
+        <div class="tl-co">Full-time · Singapore</div>
+        <ul class="tl-list">
+          <li>Cut chargeback rates by <strong>42% in year one</strong>, sustaining at 0.61% YTD</li>
+          <li>Built fraud prevention systems flagging mass-purchase &amp; resale abuse behaviours</li>
+          <li>Developed supply chain email classifier (product / reorder / billing)</li>
+          <li>Delivered multiple workflow automations saving time across teams</li>
+          <li>Led a <strong>hybrid team of 6</strong> across on-site and remote setups</li>
+        </ul>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-date">Jan 2020 – Jun 2023 · Trunk Tech Pte Ltd</div>
+        <div class="tl-role">Project Manager</div>
+        <div class="tl-co">Full-time · Singapore</div>
+        <ul class="tl-list">
+          <li>Dual role overseeing chatbot and financial comparison product</li>
+          <li><strong>Founding team member</strong> — helped generate six-figure revenue</li>
+          <li>End-to-end delivery from product discovery to launch</li>
+        </ul>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-date">Jul 2017 – Jun 2023 · Trunk Tech Pte Ltd</div>
+        <div class="tl-role">Full-Stack Developer → Dev Team Lead</div>
+        <div class="tl-co">Full-time · Singapore</div>
+        <ul class="tl-list">
+          <li><strong>3 products</strong>, combined user base of <strong>10,000+</strong></li>
+          <li>6 project cycles — iOS, Android, and 4 web SaaS platforms</li>
+          <li>Promoted to Development Team Lead (Jul 2019 – Mar 2020)</li>
+        </ul>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-date">2013 – 2017 · Boston University</div>
+        <div class="tl-role">BSc Mechanical Engineering</div>
+        <div class="tl-co">+ General Assembly (Web Dev) · Hackwagon Academy (Data Science)</div>
+        <ul class="tl-list">
+          <li>President, BU Singapore Collegiate Society — 9+ colleges, 2 large-scale events</li>
+          <li>Research Assistant: ROV hardware &amp; electronics prototyping</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="otw"><span class="owdot"></span>Open to work — Singapore</div>
+  <h2>Let's build something<br>great together.</h2>
+  <p>Targeting PM, TPM, and Program Manager roles in Singapore — especially in tech, fintech, SaaS, and high-growth product teams.</p>
+  <div class="cbtns">
+    <a class="btn-w" href="https://www.linkedin.com/in/ianc0902" target="_blank" rel="noopener">LinkedIn ↗</a>
+    <a class="btn-ow" href="mailto:ianchongwe@gmail.com">Email me</a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Ian Chong · Singapore</p>
+  <div class="fl">
+    <a href="https://www.linkedin.com/in/ianc0902" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="#hero">Back to top ↑</a>
+  </div>
+</footer>
+
+<script>
+  const ro = new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible')})},{threshold:.1});
+  document.querySelectorAll('.reveal').forEach(el=>ro.observe(el));
+
+  const co = new IntersectionObserver(e=>{
+    e.forEach(x=>{
+      if(!x.isIntersecting)return;
+      x.target.querySelectorAll('.count').forEach(el=>{
+        const t=+el.dataset.target; let c=0;
+        const s=Math.max(1,Math.ceil(t/28));
+        const ti=setInterval(()=>{c=Math.min(c+s,t);el.textContent=c;if(c>=t)clearInterval(ti)},45);
+      });
+      co.unobserve(x.target);
+    });
+  },{threshold:.6});
+  const st=document.getElementById('stats');
+  if(st)co.observe(st);
+
+  window.addEventListener('scroll',()=>{
+    document.getElementById('nav').classList.toggle('scrolled',window.scrollY>40);
+  });
+</script>
+</body>
+</html>
