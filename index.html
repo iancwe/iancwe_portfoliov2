@@ -26,12 +26,12 @@
        5. Deploy. Analytics will start tracking within 24 hours.
        ═══════════════════════════════════════════════════════ -->
   <!-- Replace G-XXXXXXXXXX with your actual GA4 Measurement ID -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YMGPD8965M"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-YMGPD8965M');
+    gtag('config', 'G-XXXXXXXXXX');
   </script>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet" />
@@ -93,8 +93,8 @@
     .hero-actions{display:flex;gap:.85rem;flex-wrap:wrap}
     .btn-p{background:var(--acc);color:#fff;padding:.88rem 2.2rem;border-radius:8px;font-family:var(--ff);font-size:.9rem;font-weight:700;letter-spacing:.04em;text-decoration:none;transition:all .2s;display:inline-block}
     .btn-p:hover{background:var(--acc-d);transform:translateY(-2px);box-shadow:0 8px 24px rgba(37,99,235,.25)}
-    .btn-g{background:transparent;color:var(--text2);padding:.88rem 2.2rem;border-radius:8px;border:1.5px solid var(--border);font-family:var(--ff);font-size:.9rem;font-weight:600;text-decoration:none;transition:all .2s;display:inline-block}
-    .btn-g:hover{border-color:var(--acc);color:var(--acc)}
+    .btn-g{background:#f0f5ff;color:var(--acc);padding:.88rem 2.2rem;border-radius:8px;border:1.5px solid var(--acc);font-family:var(--ff);font-size:.9rem;font-weight:700;text-decoration:none;transition:all .2s;display:inline-block}
+    .btn-g:hover{background:var(--acc-l);border-color:var(--acc-d);color:var(--acc-d)}
 
     @media(max-width:860px){
       .hero-split{grid-template-columns:1fr;gap:3rem}
@@ -104,6 +104,23 @@
     @media(max-width:560px){
       .hero-stats{grid-template-columns:1fr 1fr}
     }
+
+
+    
+    #press{background:var(--bg)}
+    .press-card{background:var(--bg2);border:1px solid var(--border);border-radius:16px;padding:2rem 2.5rem;display:grid;grid-template-columns:auto 1fr auto;gap:2rem;align-items:center;transition:all .25s;text-decoration:none;color:inherit}
+    .press-card:hover{background:#fff;border-color:var(--acc);box-shadow:0 8px 32px rgba(37,99,235,.08);transform:translateY(-2px)}
+    .press-thumb{width:140px;min-width:140px;height:100px;border-radius:10px;overflow:hidden;flex-shrink:0}
+    .press-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+    .press-logo-fb{background:#0d6efd;border-radius:10px;width:140px;height:100px;display:flex;align-items:center;justify-content:center}
+    .press-logo-fb span{color:#fff;font-size:1.1rem;font-weight:800}
+    .press-lbl{font-size:.66rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin-bottom:.4rem}
+    .press-title{font-family:var(--ff);font-size:1.05rem;font-weight:800;color:var(--text);margin-bottom:.4rem;line-height:1.3}
+    .press-desc{font-size:.88rem;color:var(--muted);line-height:1.72;margin-bottom:.7rem}
+    .press-meta{display:flex;align-items:center;gap:.75rem}
+    .press-badge{background:#fffbeb;color:#92400e;border:1px solid #fde68a;padding:.2rem .65rem;border-radius:100px;font-size:.68rem;font-weight:700}
+    .press-date{font-size:.73rem;color:var(--muted)}
+    .press-arrow{font-size:.85rem;color:var(--acc);font-weight:700;white-space:nowrap}
 
     /* STATS */
     #stats{background:var(--text);padding:2.75rem 6vw}
@@ -188,7 +205,7 @@
     .cbtns{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap}
     .btn-w{background:#fff;color:var(--acc);padding:.88rem 2.2rem;border-radius:8px;font-family:var(--ff);font-size:.9rem;font-weight:700;text-decoration:none;transition:all .2s}
     .btn-w:hover{background:#eff6ff;transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.15)}
-    .btn-ow{background:transparent;color:#fff;padding:.88rem 2.2rem;border-radius:8px;border:2px solid rgba(255,255,255,.5);font-family:var(--ff);font-size:.9rem;font-weight:700;text-decoration:none;transition:all .2s}
+    .btn-ow{background:rgba(255,255,255,.18);color:#fff;padding:.88rem 2.2rem;border-radius:8px;border:2px solid rgba(255,255,255,.9);font-family:var(--ff);font-size:.9rem;font-weight:700;text-decoration:none;transition:all .2s}
     .btn-ow:hover{border-color:#fff;background:rgba(255,255,255,.1)}
 
     /* FOOTER */
@@ -273,8 +290,7 @@
             <span class="hs-lbl">Founding team products</span>
           </div>
         </div>
-
-        <div class="hero-actions">
+    <div class="hero-actions">
           <a class="btn-p" href="#work">View my work</a>
           <a class="btn-g" href="#contact">Let's connect</a>
         </div>
@@ -483,12 +499,38 @@
   </div>
 </section>
 
+<section id="press">
+  <div class="reveal">
+    <p class="ey">In the press</p>
+    <h2>Award-winning <span class="ac">work.</span></h2>
+  </div>
+  <div style="margin-top:2.5rem">
+    <a class="press-card reveal" href="https://sbr.com.sg/co-written-partner/event-news/truegenics-brings-home-win-sbr-technology-excellence-awards-2025-ai-solution" target="_blank" rel="noopener">
+      <div class="press-thumb">
+        <img src="https://www.cmgassets.com/s3fs-public/styles/article_node_main_image/public/2025-04/truegenics-pte-ltd.jpeg.webp?itok=22PgKtr3" 
+             alt="Truegenics SBR Technology Excellence Awards 2025"
+             onerror="this.parentElement.innerHTML='<div class=\'press-logo-fb\'><span>SBR</span></div>'">
+      </div>
+      <div>
+        <div class="press-lbl">Singapore Business Review &mdash; Technology Excellence Awards 2025</div>
+        <div class="press-title">Truegenics brings home win at SBR Technology Excellence Awards 2025 for AI solution</div>
+        <p class="press-desc">Truegenics was recognised at the Singapore Business Review Technology Excellence Awards 2025 for its AI-powered automation solution. As Project Manager leading the initiative, this reflects the team&rsquo;s work building intelligent automation and process optimisation that drives measurable business outcomes at scale.</p>
+        <div class="press-meta">
+          <span class="press-badge">Award Winner</span>
+          <span class="press-date">Singapore Business Review &middot; 2025</span>
+        </div>
+      </div>
+      <div class="press-arrow">Read article &rarr;</div>
+    </a>
+  </div>
+</section>
+
 <section id="contact">
   <div class="otw"><span class="owdot"></span>Open to work — Singapore</div>
   <h2>Let's build something<br>great together.</h2>
   <p>Targeting PM, TPM, and Program Manager roles in Singapore — especially in tech, fintech, SaaS, and high-growth product teams.</p>
   <div class="cbtns">
-    <a class="btn-w" href="https://www.linkedin.com/in/ianc-0902" target="_blank" rel="noopener">LinkedIn ↗</a>
+    <a class="btn-w" href="https://www.linkedin.com/in/ianc0902" target="_blank" rel="noopener">LinkedIn ↗</a>
     <a class="btn-ow" href="mailto:ianchongwe@gmail.com">Email me</a>
   </div>
 </section>
@@ -496,7 +538,7 @@
 <footer>
   <p>© 2026 Ian Chong · Singapore</p>
   <div class="fl">
-    <a href="https://www.linkedin.com/in/ianc-0902" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://www.linkedin.com/in/ianc0902" target="_blank" rel="noopener">LinkedIn</a>
     <a href="#hero">Back to top ↑</a>
   </div>
 </footer>
